@@ -1,0 +1,49 @@
+create database KPRIET
+use KPRIET 
+
+CREATE TABLE kprstudents1 (
+name varchar(25), unique 
+Age int , not null
+Department varchar(30) 
+)
+
+
+select * from kprstudents desc
+
+create database mayura;
+
+drop database mayura
+
+insert into kprstudents  (name , Age , Department ) values  ('mayura' , 19,'cse' ) , ('arun' , 22, 'ece')
+
+insert into kprstudents  values ('vino' , 19,'cse')
+insert into kprstudents  values ('john' , 28,'cse')
+
+insert into kprstudents  values ('karthi' , 21,'ece')
+insert into kprstudents values (&name,&Age, &Department ) 
+
+update kprstudents  set Department = 'ece'  where name = 'mayura'
+select  name as "NAME OF  STUDENT"  from kprstudents
+
+select distinct * from  kprstudents 
+select TOP 3 * from kprstudents
+
+alter table kprstudents add Roll int
+
+use KPRIET 
+select describe  *from kprstudents
+
+use KPRIET 
+
+CREATE TABLE kpr (
+name varchar(25),
+Age int ,
+Department varchar(30) 
+)
+
+
+set 
+not null
+primary 
+foreign
+identity 
